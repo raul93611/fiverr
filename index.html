@@ -3,11 +3,122 @@
   <head>
     <meta charset="utf-8">
     <title>Fiverr</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <header class="header">
+      <nav id="navbar_principal" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand font-weight-bold" href="#">fvr</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav justify-content-end w-100">
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light" href="#lineup">Comienza a vender</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light" href="#galeria">Iniciar sesion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2 text-light btn btn-outline-light" href="#boletos">Acceder</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="text-light text-center col-md-12">
+            <h1 class="font-weight-bold">No solo sueñes, hazlo</h1>
+            <p>Servicios freelancer para empresarios</p>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                <form class="form_principal form-inline w-100" action="" method="post">
+                    <input type="text" name="" class="form-control form-control-lg" placeholder="¿Qué servicio buscas?" value="">
+                    <button type="submit" class="btn btn-success btn-lg" name="button">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid categorias">
+      <h1 class="text-center font-weight-bold mt-4">Explora el marketplace</h1>
+      <p class="text-center">Inspirate para construir tu negocio</p>
+      <div class="row">
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_dg.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Diseño grafico</h4>
+          <p>Logotipos, flyers, tarjetas de presentacion y mas</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_mkt.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Marketing digital</h4>
+          <p>Campañas, y sobretodo ventas!</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_et.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Escritura y traducciones</h4>
+          <p>Resumenes entradas de blog, traducciones y mas</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_vd.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Video & animacion</h4>
+          <p>Animacion de logotipos, comerciales, presentaciones y mas.</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_av.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Musica & audio</h4>
+          <p>Canciones, comerciales y mucho mas</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_dev.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Programacion</h4>
+          <p>WordPress, tiendas virtuales y aplicaciones web y mucho mas</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_negocios.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Negocios</h4>
+          <p>Asistentes virtuales, analisis de mercado, planes de negocios y mas</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 text-center categoria">
+          <img src="img/icono_ev.png" class="img-fluid" alt="">
+          <h4 class="font-weight-bold">Estilo de vida</h4>
+          <p>Cursos en linea, mentoria, consejos, creacion de equipos y mas.</p>
+        </div>
+      </div>
+    </section>
+    <section class="fvr_pro py-5">
+      <div class="container text-light">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="font-weight-bold">El nuevo fvr PRO</h2>
+            <p>Altamente probado. Alto nivel. Alta demanda.</p>
+            <button type="button" class="btn btn-outline-light" name="button">Leer mas</button>
+          </div>
+          <div class="col-md-6">
+            <a href="#" data-toggle="modal"  data-target="#fvr_pro">
+              <img src="img/fvr_pro.png" class="img-fluid" alt="">
+            </a>
+            <div class="modal fade" id="fvr_pro" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <video src="video/Social Media - 1360.mp4" class="embed-responsive-item" controls autoplay loop>
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

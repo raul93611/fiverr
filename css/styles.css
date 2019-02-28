@@ -1,0 +1,58 @@
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+.header{
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+.header .navbar-brand{
+  font-size: 2rem !important;
+}
+
+.header .form_principal input{
+  width: 80%;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.header .form_principal button{
+  width: 20%;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.categoria p{
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.categoria h4::before{
+  content: '';
+  width: 30%;
+  height: 2px;
+  background-color: #99e59d;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: all .3s ease;
+}
+
+.categoria:hover h4::before{
+  width: 60%;
+}
+
+.categoria:hover p{
+  opacity: 1;
+}
+
+.fvr_pro{
+  background-color: #343a40;
+}
+
+@media (min-width: 992px){
+  #navbar_principal{
+    background-color: transparent !important;
+  }
+}
