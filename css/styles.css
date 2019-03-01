@@ -47,12 +47,89 @@ body{
   opacity: 1;
 }
 
-.fvr_pro{
+.fvr_pro, .beneficios{
   background-color: #343a40;
+}
+
+.primeros_pasos .logotipo{
+  background-image: url('../img/servicio1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primeros_pasos .social_media{
+  background-image: url('../img/servicio2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primeros_pasos .audio{
+  background-image: url('../img/servicio3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primeros_pasos .traducciones{
+  background-image: url('../img/servicio4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primeros_pasos .wordpress{
+  background-image: url('../img/servicio5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primeros_pasos .description{
+  flex: 1 0 calc(50% - 1rem);
+  height: 350px;
+}
+
+.testimoniales{
+  background-color: #ccc;
+}
+
+.guias a{
+  text-decoration: none;
+}
+
+.footer .nav-link{
+  color: #343a40 !important;
+}
+
+.footer{
+  background-color: #eaebed;
+}
+
+.footer .footer_col{
+  flex: 1 0 calc(100% - 1rem);
+}
+
+.header .form_secundario input{
+  border-radius: 10px 0px 0px 10px;
+}
+
+.header .form_secundario button{
+  border-radius: 0px 10px 10px 0px;
+}
+
+#navbar2, #submenu2{
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px){
+  .primeros_pasos .description, .footer .footer_col{
+    flex: 1 0 calc(33.3% - 1rem);
+  }
 }
 
 @media (min-width: 992px){
   #navbar_principal{
     background-color: transparent !important;
+  }
+
+  .primeros_pasos .description, .footer .footer_col{
+    flex: 1 0 calc(15% - 1rem);
   }
 }
